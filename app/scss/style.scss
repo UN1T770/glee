@@ -33,6 +33,7 @@
     line-height: 12px;
     text-decoration: none;
     color: $accent;
+    @extend %rubik-500;
   }
 }
 
@@ -115,12 +116,14 @@
     margin-bottom: 9px;
     font-size: 16px;
     line-height: 21px;
+    @extend %dmsans-700;
   }
   &-link{
     font-size: 14px;
     line-height: 32px;
     text-decoration: none;
     color: $footer;
+    @extend %rubik-400;
   }
   &-text{
     padding: 15px 0;
