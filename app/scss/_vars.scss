@@ -29,3 +29,14 @@ $footer: #7b7b7b;
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
+
+%btn{
+    background-color: $accent;
+    color: #fff;
+    @extend %rubik-500;
+    padding: 24px 100px 24px 28px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 12px;
+    cursor: pointer;
+}
