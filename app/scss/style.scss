@@ -46,15 +46,34 @@
     border-radius: 50%;
     margin-right: 15px;
   }
+  .user-nav__link-content{
+    display: flex;
+  }
   .page-link2{
     background-color: $fon;
     padding: 16px;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-right: 15px;
   }
   .page1{
     padding-top: 4px;
-    padding-right: 1px;
+    padding-right: 50px;
+    padding-left: 33px;
+  }
+  .user-nav__num-zero{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 12px;
+    right: 113px;
+    text-align: center;
+    line-height: 16px;
+  }
+  .page-images{
+    padding-right: 35px;
+    padding-top: 4px;
   }
   .page2{
     padding-right: 2px;
@@ -80,8 +99,8 @@
     height: 16px;
     border-radius: 50%;
     background-color: #fff;
-    top: 12px;
-    right: 9px;
+    top: 14px;
+    right: 43px;
     text-align: center;
     line-height: 16px;
   }
@@ -204,6 +223,10 @@
   &__img{
     padding-top: 70px;
   }
+  .top-slider__images{
+    display: inline;
+    padding-left: 60px;
+  }
   .slick-dots{
     display: flex;
     justify-content: center;
@@ -225,13 +248,43 @@
       transition: all .2s;
       &:hover{
         background-color: #fff;
-      }
-      }
-      &.slick-active{
-
+       }
       }
     }
   }
 }
+
+.info{
+  &__inner{
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+  }
+  &__item{
+    display: flex;
+  }
+  &__content{
+    margin-left: 25px;
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+    @extend %dmsans-700;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+    @extend %dmsans-400;
+  }
+}
+
+// .products{
+
+// }
+
+
 
 @import 'media';
