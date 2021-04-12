@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -21,7 +22,7 @@
 }
 
 .menu{
-  margin-left: 110px;
+  margin-left: 145px;
   &__list{
     display: flex;
   }
@@ -135,6 +136,7 @@
     padding: 15px 16px;
     background-color: #fef7f0;
     border: none;
+    font-size: 12px;
     &::placeholder{
       color: #234969;
     }
@@ -144,6 +146,7 @@
     background-color: #a3bbc8;
     color: #fff;
     padding: 14px 20px 14px 16px;
+    cursor: pointer;
   }
 }
 
@@ -168,6 +171,66 @@
     color: $footer;
     font-size: 14px;
     line-height: 32px;
+  }
+}
+
+.top-slider{
+  &__inner{
+    background-color: $fon;
+  }
+  &__item{
+    display: flex !important;
+    justify-content: space-evenly;
+  }
+  &__title{
+    margin-top: 175px;
+    @extend %rubik-500;
+    max-width: 500px;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 40px;
+  }
+  &__text{
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $accent;
+    max-width: 370px;
+    @extend %rubik-400;
+  }
+  &__link{
+    @extend %btn;
+  }
+  &__img{
+    padding-top: 70px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      button{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 12px;
+      padding: 0;
+      font-size: 10px;
+      background-color: #fde3cc;
+      line-height: 9px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      color: $default;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover{
+        background-color: #fff;
+      }
+      }
+      &.slick-active{
+
+      }
+    }
   }
 }
 
