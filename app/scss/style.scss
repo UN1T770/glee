@@ -380,11 +380,11 @@
     margin-left: 16px;
   }
   .img7{
-    margin-top: 35px;
+    margin-top: 37px;
     margin-left: 16px;
   }
   .img8{
-    margin-top: 54px;
+    margin-top: 46px;
     margin-left: 19px;
   }
   &__title{
@@ -397,10 +397,65 @@
   .title1{
     margin-top: 52px;
   }
+  .title2{
+    margin-top: 67px;
+  }
   &__new-price{
     @extend %dmsans-700;
     font-size: 16px;
     color: #a3bbc8;
+  }
+}
+
+.products-light{
+  padding: 90px 0 100px;
+  &__item{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__items{
+    display: flex;
+    justify-content: center;
+    width: 870px;
+    height: 390px;
+    background-color: #feefe2;
+    position: relative;
+  }
+  &__img{
+    position: absolute;
+    left: 0;
+    margin-top: -95px;
+    margin-left: 90px;
+  }
+  .light__img{
+    margin-left: 180px;
+  }
+  &__content{
+    margin-left: 160px;
+    margin-top: 93px;
+    max-width: 350px;
+  }
+  .page-content{
+    margin-top: 65px;
+    margin-left: 370px;
+  }
+  &__title{
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    @extend %dmsans-700;
+  }
+  &__text{
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 30px; 
+  }
+  &__link{
+    background-color: #feefe2; 
+    color: $accent;
+    border: 2px solid #b3b7b5;
+    padding: 23px 86px 24px 18px;
+    border-radius: 7%;
   }
 }
 
