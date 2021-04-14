@@ -40,3 +40,10 @@ $footer: #7b7b7b;
     line-height: 12px;
     cursor: pointer;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{a}n(#{$numbers});
+}
