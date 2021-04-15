@@ -585,7 +585,6 @@
     margin-right: 30px;
   }
   &__contacts{
-    // background-color: #fef7f0; 
     padding-top: 90px;
   }
   &__contacts-images{
@@ -595,6 +594,98 @@
     display: inline-block;
     margin-left: 90px;
   }
+}
+
+.top{
+  background-color: #edf1f4;
+  text-align: center;
+  &__title{
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    margin-bottom: 18px;
+    padding-top: 35px;
+    @extend %rubik-400;
+  }
+  .breadcrumbs{
+    &__list{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+    &__link{
+      font-size: 14px;
+      line-height: 24px;
+      @extend %rubik-400;
+      color: #737980;
+    }
+    .page-link::after{
+      content: '/';
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+  }
+}
+
+.modal{
+  padding-top: 120px;
+  max-width: 470px;
+  margin: 0 auto 115px;
+  &__label{
+    display: block;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  &__input{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    border: 2px solid #eaeaea;
+    height: 60px;
+    padding: 0 15px;
+  }
+  &__button{
+    padding: 18px 212px;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    margin-bottom: 35px;
+  }
+  &__password{
+    margin-left: 219px;
+    font-size: 14px;
+    @extend %rubik-400;
+    color: #436372;
+  }
+  &__border{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+  }
+  &__problem{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    @extend %rubik-400;
+    color: #436372;
+  }
+  &__accoutn{
+    padding: 20px 150px;
+    border: 2px solid #a3bbc8;
+    color: $default;
+    font-size: 18px;
+    @extend %rubik-500;
+  }
+}
+
+.company{
+  background-color: #fef7f0;
+  padding-bottom: 100px;
 }
 
 @import 'media';
