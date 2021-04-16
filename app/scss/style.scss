@@ -52,7 +52,7 @@
   .page-link2{
     background-color: $fon;
     padding: 16px;
-    border-radius: 20%;
+    border-radius: 50px;
     margin-right: 15px;
   }
   .page1{
@@ -879,6 +879,49 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 114px 30px;
+  }
+}
+
+.information{
+  padding: 120px 0;
+  &__title{
+    margin-bottom: 35px;
+    font-size: 24px;
+    color: $default;
+    @extend %rubik-500;
+  }
+  &__item{
+    margin-bottom: 28px;
+    display: flex;
+  }
+  &__span{
+    font-size: 16px;
+    color: $default;
+    @extend %rubik-400;
+    padding-right: 10px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $default;
+    @extend %rubik-400;
+    padding-bottom: 5px;
+  }
+}
+
+.information__inner{
+  padding-top: 50px;
+  &-title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    @extend %rubik-500;
+    color: $default;
+  }
+  &-text{
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: $default;
   }
 }
 
