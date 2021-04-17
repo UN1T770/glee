@@ -1115,5 +1115,89 @@ display: none;
   }
 }
 
+.mebel-item{
+  margin-left: 30px;
+  display: flex;
+  margin-bottom: 40px;
+  &__images{
+    width: 370px;
+    height: 500px;
+    border: 3px solid #f2f2f2;
+  }
+  &__img{
+    padding: 80px 20px;
+  }
+  &__content{
+    width: 430px;
+    margin-left: 60px;
+  }
+  &__title{
+    padding-top: 90px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    @extend %rubik-400;
+    color: #333333;
+  }
+  &__span{
+    display: inline-block;
+    padding: 40px 0;
+    font-size: 30px;
+    @extend %rubik-400;
+    color: #333333;
+  }
+  &__text{
+    color: $default;
+    font-size: 16px;
+    @extend %rubik-400;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  &__link{
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 50px;
+    @extend %rubik-400;
+    border-radius: 5px;
+  }
+  &__icon{
+    display: flex;
+  }
+  &__icon-inner{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #a3bac7;
+  }
+  &__icon-inner1{
+    background-color: #fff;
+  }
+  &__icon-img{
+    padding: 15px;
+  }
+  .img-doc1{
+    margin-left: 32px;
+  }
+}
+
+.mebel-link{
+  &__item{
+    padding-top: 35px;
+    margin-left: 17px;
+  }
+  &__content{
+    background-color: #fff;
+    border: 1px solid #a3bbc8;
+    color: $default;
+    font-size: 15px;
+    padding: 20px 22px;
+    margin-left: 15px;
+    transition: all .2s;
+    &:hover{
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+}
 
 @import 'media';
