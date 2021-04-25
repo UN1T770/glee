@@ -960,6 +960,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 114px 30px;
   }
+  &__images-arrow{
+    margin-left: 150px;
+    margin-top: -20px;
+  }
 }
 
 .information{
@@ -1496,14 +1500,22 @@ display: none;
     height: 380px;
     background-color: #fff;
     margin-right: 30px;
+    &:hover{
+      .related__link-box{
+      transform: translateY(0);
+    }
+    }
   }
   &__images{
     padding: 36px 42px 0 42px;
+    overflow: hidden;
   }
   &__link-box{
     display: flex;
     margin-top: -44px;
     margin-left: 60px;
+    transform: translateY(1000%);
+    transition: all .2s;
   }
   &__box{
     margin-right: 15px;
@@ -1515,11 +1527,11 @@ display: none;
       background-color: #a3bbc8;
     }
   }
-    &__link:hover{
-    path{
-      fill: #fff;
-    }
+  &__link:hover{
+  path{
+    fill: #fff;
   }
+}
   &__img-page{
     margin-left: 11px;
     margin-top: 10px;
@@ -1610,12 +1622,23 @@ display: none;
       }
     }
   }
+      &__img-page{
+      margin-left: 140px;
+      margin-top: -18px;
+    }
+  &-input{
+    padding: 7px 10px 6px 10px;
+    border: 2px solid #edf1f4;
+    border-radius: 5px;
+  }
     &__btn{
     background-color: #edf1f4;
     font-size: 16px;
-    padding: 12px 15px;
+    padding: 12px 15px 18px 15px;
     border: none;
     margin-bottom: 60px;
+    margin-left: -4px;
+    border-radius: 5px;
   }
 }
 
@@ -1704,6 +1727,16 @@ display: none;
     color: $default;
     margin-left: 77px;
     padding: 10px 0 20px 0;
+    position: relative;
+  }
+  .blogdetails__contents-span2::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #a3bbc8;
+    margin-top: 14px;
+    margin-left: -160px;
   }
   &-info{
     padding: 40px 0;
@@ -1893,6 +1926,12 @@ display: none;
     padding: 10px 0 10px 20px;
     border: 1px solid #e5e5e5;
     background-color: #f9f9f9;
+    background-image: url(../images/leave1.png);
+    background-repeat: no-repeat;
+    background-position: center right 7%;
+    &:hover{
+      border: 1px solid #a3bbc8;
+    }
   }
   &__input1{
     border: 1px solid #e5e5e5;
@@ -1900,12 +1939,31 @@ display: none;
     margin-bottom: 40px;
     display: block;
     width: 815px;
-    padding: 15px 0 60px 20px;
+    padding: 15px 20px 60px 20px;
+    background-image: url(../images/leave3.png);
+    background-repeat: no-repeat;
+    background-position: right 3% top 27%;
     background-color: #f9f9f9;
+        &:hover{
+      border: 1px solid #a3bbc8;
+    }
+  }
+  &__input3{
+    margin-right: 12px;
+    width: 400px;
+    padding: 10px 0 10px 20px;
+    border: 1px solid #e5e5e5;
+    background-color: #f9f9f9;
+    background-image: url(../images/leave2.png);
+    background-repeat: no-repeat;
+    background-position: center right 7%;
+    &:hover{
+      border: 1px solid #a3bbc8;
+    }
   }
   &__link{
     display: inline-block;
-    padding: 15px 35px;
+    padding: 10px 35px;
     color: #fff;
     background-color: #a3bbc8;
     font-size: 15px;
@@ -1947,20 +2005,20 @@ display: none;
   &__content{
     padding: 70px 60px 80px;
   }
-  &__images{
-    width: 80px;
-    height: 80px;
+  &__link{
     background-color: #fff;
-    border-radius: 21px;
-    margin-left: 85px;
-    margin-bottom: 60px;
+    border-radius: 10px;
+    padding: 40px 20px 16px 20px;
+    margin-left: 93px;
     &:hover{
       background-color: #a3bbc8;
     }
   }
-  &__img{
-    padding: 18px 25px;
+      &__link:hover{
+    path{
+      fill: #fff;
     }
+  }
   &__sabtitle{
     text-align: center;
     color: #222222;
@@ -1968,6 +2026,7 @@ display: none;
     line-height: 26px;
     @extend %dmsans-700;
     margin-bottom: 24px;
+    margin-top: 70px;
   }
   &__text{
     text-align: center;
@@ -1993,17 +2052,35 @@ display: none;
   &__input{
     display: inline-block;
     width: 300px;
-    padding: 10px 0 10px 20px;
+    padding: 10px 20px 10px 20px;
     margin-bottom: 25px;
     background-color: #f1f1f1;
     border: none;
     margin-right: 20px;
+    background-image: url(../images/get/maps1.png);
+    background-repeat: no-repeat;
+    background-position: center right 7%;
+  }
+  &__input3{
+    display: inline-block;
+    width: 300px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 25px;
+    background-color: #f1f1f1;
+    border: none;
+    margin-right: 20px;
+    background-image: url(../images/get/maps2.png);
+    background-repeat: no-repeat;
+    background-position: center right 7%;
   }
   &__input1{
     width: 624px;
     border: none;
     background-color: #f1f1f1;
-    padding: 17px 0 110px 20px;
+    padding: 17px 20px 110px 20px;
+    background-image: url(../images/get/maps3.png);
+    background-repeat: no-repeat;
+    background-position: right 4% top 17%;
   }
   &__link{
     display: inline-block;
@@ -2014,6 +2091,11 @@ display: none;
     font-size: 15px;
     border-radius: 7px;
   }
+}
+
+#map{
+  width: 500px;
+  height: 340px;
 }
 
 @import 'media';
